@@ -8,5 +8,6 @@
             "default": "hey",
             "description": "Select a pre-made greeting, or enter your own"
         }
-    }
+    },
+    "include": ["ubuntu"]
 }
