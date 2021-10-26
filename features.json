@@ -1,8 +1,6 @@
-
-// features.json is the entrypoint for the devcontainer CLI to process your features.
-// More information on syntax at https://aka.ms/...
-//
-//
+/*
+features.json is the entrypoint for the devcontainer CLI to process your features.
+More information on syntax at https://aka.ms/...
 // {
 // 	"features": [
 // 		{
@@ -37,5 +35,5 @@
 //     ],
 //     // Add between [1..n] features
 // }
-
+*/
 {}
