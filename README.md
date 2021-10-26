@@ -11,11 +11,13 @@ Assets will be compressed and added as a release artifact with the name `feature
 
 The latest set can be directly downloaded with a URI like:
 
-`https://github.com/USER/PROJECT/releases/latest/download/features.tgz`
+`https://github.com/<USER>/<REPO>/releases/latest/download/features.tgz`
 
 Download from a previous tag (eg: `v0.0.1`) like so:
 
-`https://github.com/USER/PROJECT/releases/v0.0.1/download/features.tgz`
+`https://github.com/<USER>/<REPO>/releases/download/v0.0.1/features.tgz`
+
+Note that `latest` and `v0.0.1` are not in the same spot.
 
 
 ## Include feature in your project's devcontainer 
