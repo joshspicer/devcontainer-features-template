@@ -3,7 +3,7 @@
 
 In your devcontainer, provide the following `feature`.
 
-```json
+```jsonc
 features: {
     "helloworld@YOUR_REPO_NAME": {
         greeting: "Hello!"
