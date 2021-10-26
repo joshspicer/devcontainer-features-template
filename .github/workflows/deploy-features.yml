@@ -13,13 +13,6 @@ jobs:
       - name: Get tag name
         id: get_tag_name  
         run: echo "::set-output name=tag::$(echo "${{ github.ref }}" | grep -oP 'refs/tags/\K(.+)')"
-        
-      - name: Install dependencies
-        run: |
-         yarn
-      - name: yarn build and yarn package
-        run: |
-          yarn build && yarn package
           
       - name: Devcontainer features (lint & archive)
         uses: joshspicer/devcontainer-features-action@v0.0.20
