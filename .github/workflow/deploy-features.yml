@@ -1,0 +1,35 @@
+name: 'Deploy Features'
+on:
+  push:
+    tags:
+    - 'v*'
+
+jobs:
+  test: # make sure the action works on a clean machine without building
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Get tag name
+        id: get_tag_name  
+        run: echo "::set-output name=tag::$(echo "${{ github.ref }}" | grep -oP 'refs/tags/\K(.+)')"
+        
+      - name: Install dependencies
+        run: |
+         yarn
+      - name: yarn build and yarn package
+        run: |
+          yarn build && yarn package
+          
+      - name: Devcontainer features (lint & archive)
+        uses: joshspicer/devcontainer-features-action@v0.0.20
+        with:
+          path-to-features: '.'
+          
+      - name: Get or Create Release at current tag
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true # Lets us upload our own artifact from previous step
+          artifactErrorsFailBuild: true
+          artifacts: './features.tar.gz'
+          token: ${{ secrets.GITHUB_TOKEN }}

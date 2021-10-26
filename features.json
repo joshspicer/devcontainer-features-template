@@ -1,1 +1,12 @@
-{} 
+{
+    "id": "helloworld",
+    "name": "My First Feature",
+    "options": {
+        "greeting": {
+            "type": "string",
+            "proposals": ["hey", "hello", "hi", "howdy" ],
+            "default": "hey",
+            "description": "Select a pre-made greeting, or enter your own"
+        }
+    }
+}
