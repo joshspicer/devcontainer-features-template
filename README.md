@@ -1,3 +1,5 @@
+> ⚠️ NOTE: This is a work-in-progress/my experimental project. Subject to (heavy) modification!
+
 # Devcontainer Features Template
 
 To create your own remote [devcontainer features](#), use this repo as a template.  This repo contains one "feature" called `helloworld`.
