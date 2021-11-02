@@ -19,7 +19,7 @@
             "options": {
                 "favorite": {
                     "type": "string",
-                    "enum": [ "red", "blue", "green" ],
+                    "enum": [ "red", "gold", "green" ],
                     "default": "red",
                     "description": "Choose your favorite color."
                 }
