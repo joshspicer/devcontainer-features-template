@@ -5,6 +5,12 @@
 To create your own remote [devcontainer features](#), use this repo as a template.  This repo contains one "feature" called `helloworld`.
 
 
+# Features In This Repo (Directory)
+
+#### helloworld
+
+This is a sample feature that prints whatever option you pass to it when invoking the `hello` program in a terminal.
+
 ## Release Flow
 
 Push a tag to your repo, which will trigger the [deploy-features workflow](https://github.com/joshspicer/devcontainer-features-template/blob/main/.github/workflows/deploy-features.yml).
