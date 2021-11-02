@@ -2,14 +2,20 @@
 
 # Devcontainer Features Template
 
-To create your own remote [devcontainer features](#), use this repo as a template.  This repo contains one "feature" called `helloworld`.
+To create your own remote [devcontainer features](#), use this repo as a template.  This repo contains two "features" called `helloworld` and `color`.
 
 
 # Features In This Repo (Directory)
 
-#### helloworld
+### helloworld
 
 This is a sample feature that prints whatever option you pass to it when invoking the `hello` program in a terminal.
+
+### color
+
+Prints your favorite color (in that color) when you run the program `color` in your terminal. 
+
+Note: Your favorite color can only be `green`, `red`, or `gold`.
 
 ## Release Flow
 
@@ -34,8 +40,11 @@ To include your feature in a project's devcontainer, provide the following `feat
 
 ```jsonc
 features: {
-    "<PUBLISHER>/<REPO>/helloworld": {
-        greeting: "Hello!"
+    "<PUBLISHER>/<REPO>#helloworld": {
+        "greeting": "Hello!"
+    },
+    "<PUBLISHER>/<REPO>#color": {
+        "color": "green" 
     }
 }
 ```
@@ -47,7 +56,7 @@ Providing no version implies the latest release's artifacts.  To supply a tag as
 
 ```jsonc
 features: {
-    "<PUBLISHER>/<REPO>/helloworld@v0.0.1": {
+    "<PUBLISHER>/<REPO>#helloworld@v0.0.1": {
         greeting: "Hello!"
     }
 }
