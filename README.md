@@ -39,7 +39,7 @@ Note that `latest` and `v0.0.1` are not in the same spot.
 To include your feature in a project's devcontainer, provide the following `feature` like so.
 
 ```jsonc
-features: {
+"features": {
     "<PUBLISHER>/<REPO>#helloworld": {
         "greeting": "Hello!"
     },
@@ -55,7 +55,7 @@ features: {
 Providing no version implies the latest release's artifacts.  To supply a tag as a version, use the following notation.
 
 ```jsonc
-features: {
+"features": {
     "<PUBLISHER>/<REPO>#helloworld@v0.0.1": {
         greeting: "Hello!"
     }
