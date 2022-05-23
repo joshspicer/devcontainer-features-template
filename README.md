@@ -57,7 +57,7 @@ Providing no version implies the latest release's artifacts.  To supply a tag as
 ```jsonc
 "features": {
     "<PUBLISHER>/<REPO>#helloworld@v0.0.1": {
-        greeting: "Hello!"
+        "greeting": "Hello!"
     }
 }
 ```
